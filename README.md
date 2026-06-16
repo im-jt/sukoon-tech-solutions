@@ -29,7 +29,7 @@ assets/img/logo.svg     Scalable recreation of the Sukoon logo mark
   engineering, AI consulting, computer vision &amp; NLP, MLOps &amp; cloud.
 - **Blog section** that auto-loads the latest posts from Substack, with a
   preview (image, date, excerpt) and a link to read the full post.
-- **Contact**: phone/WhatsApp, email, GSTIN, plus a form that opens the
+- **Contact**: phone/WhatsApp, email, plus a form that opens the
   visitor's email client pre-filled.
 
 ## Configuration
@@ -49,7 +49,7 @@ If your posts live on a custom domain or a different subdomain, update
 can't be reached, the section shows a graceful link to your Substack.
 
 ### Contact details
-Phone, email and GSTIN live in `index.html` (Contact section + footer).
+Phone and email addresses live in `index.html` (Contact section + footer).
 
 ## Deployment (GitHub Pages)
 
@@ -73,4 +73,4 @@ python3 -m http.server 8000
 
 ---
 
-© Sukoon Technology Solutions · GSTIN 07ANQPT5915Q1ZW
+© Sukoon Technology Solutions
