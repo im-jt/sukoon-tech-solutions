@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Sukoon Technology Solutions logo">
+  <defs>
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="45%" stop-color="#1ca7c4"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="petalGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <path id="petal" d="M0,-66 C24,-58 38,-34 30,-8 C22,-30 6,-44 0,-44 C-6,-44 -22,-30 -30,-8 C-38,-34 -24,-58 0,-66 Z"/>
+  </defs>
+  <!-- Eight overlapping rounded petals rotated around the centre form the swirl/flower mark -->
+  <g transform="translate(100,100)">
+    <g fill="url(#petalGrad)" opacity="0.92">
+      <use href="#petal" transform="rotate(0)"/>
+      <use href="#petal" transform="rotate(45)"/>
+      <use href="#petal" transform="rotate(90)"/>
+      <use href="#petal" transform="rotate(135)"/>
+      <use href="#petal" transform="rotate(180)"/>
+      <use href="#petal" transform="rotate(225)"/>
+      <use href="#petal" transform="rotate(270)"/>
+      <use href="#petal" transform="rotate(315)"/>
+    </g>
+    <g fill="url(#petalGrad2)" opacity="0.78" transform="rotate(22.5) scale(0.62)">
+      <use href="#petal" transform="rotate(0)"/>
+      <use href="#petal" transform="rotate(45)"/>
+      <use href="#petal" transform="rotate(90)"/>
+      <use href="#petal" transform="rotate(135)"/>
+      <use href="#petal" transform="rotate(180)"/>
+      <use href="#petal" transform="rotate(225)"/>
+      <use href="#petal" transform="rotate(270)"/>
+      <use href="#petal" transform="rotate(315)"/>
+    </g>
+    <circle r="11" fill="#0f2747"/>
+    <circle r="11" fill="none" stroke="#5eead4" stroke-width="1.5" opacity="0.65"/>
+  </g>
+</svg>
