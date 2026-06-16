@@ -1,39 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Sukoon Technology Solutions logo">
   <defs>
-    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2dd4bf"/>
-      <stop offset="45%" stop-color="#1ca7c4"/>
-      <stop offset="100%" stop-color="#1e3a8a"/>
+    <!-- Diagonal blue (lower-left) -> teal/green (upper-right) to match the brand mark -->
+    <linearGradient id="swirlGrad" x1="8%" y1="92%" x2="92%" y2="8%">
+      <stop offset="0%" stop-color="#163a8a"/>
+      <stop offset="40%" stop-color="#1f6fae"/>
+      <stop offset="72%" stop-color="#1aa6b8"/>
+      <stop offset="100%" stop-color="#3fbf94"/>
     </linearGradient>
-    <linearGradient id="petalGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5eead4"/>
-      <stop offset="100%" stop-color="#2563eb"/>
+    <linearGradient id="swirlGradInner" x1="8%" y1="92%" x2="92%" y2="8%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="55%" stop-color="#21a5c2"/>
+      <stop offset="100%" stop-color="#5fd6a8"/>
     </linearGradient>
-    <path id="petal" d="M0,-66 C24,-58 38,-34 30,-8 C22,-30 6,-44 0,-44 C-6,-44 -22,-30 -30,-8 C-38,-34 -24,-58 0,-66 Z"/>
+    <!-- One swirled blade; asymmetric tip gives the pinwheel rotation -->
+    <path id="blade" d="M0,-8 C22,-26 31,-52 18,-80 C12,-96 -11,-92 -15,-71 C-19,-50 -10,-33 0,-8 Z"/>
   </defs>
-  <!-- Eight overlapping rounded petals rotated around the centre form the swirl/flower mark -->
+
   <g transform="translate(100,100)">
-    <g fill="url(#petalGrad)" opacity="0.92">
-      <use href="#petal" transform="rotate(0)"/>
-      <use href="#petal" transform="rotate(45)"/>
-      <use href="#petal" transform="rotate(90)"/>
-      <use href="#petal" transform="rotate(135)"/>
-      <use href="#petal" transform="rotate(180)"/>
-      <use href="#petal" transform="rotate(225)"/>
-      <use href="#petal" transform="rotate(270)"/>
-      <use href="#petal" transform="rotate(315)"/>
+    <!-- Outer ring of blades -->
+    <g fill="url(#swirlGrad)" stroke="#bfeede" stroke-width="1.4" stroke-opacity="0.45" stroke-linejoin="round">
+      <use href="#blade" transform="rotate(0)"/>
+      <use href="#blade" transform="rotate(51.43)"/>
+      <use href="#blade" transform="rotate(102.86)"/>
+      <use href="#blade" transform="rotate(154.29)"/>
+      <use href="#blade" transform="rotate(205.71)"/>
+      <use href="#blade" transform="rotate(257.14)"/>
+      <use href="#blade" transform="rotate(308.57)"/>
     </g>
-    <g fill="url(#petalGrad2)" opacity="0.78" transform="rotate(22.5) scale(0.62)">
-      <use href="#petal" transform="rotate(0)"/>
-      <use href="#petal" transform="rotate(45)"/>
-      <use href="#petal" transform="rotate(90)"/>
-      <use href="#petal" transform="rotate(135)"/>
-      <use href="#petal" transform="rotate(180)"/>
-      <use href="#petal" transform="rotate(225)"/>
-      <use href="#petal" transform="rotate(270)"/>
-      <use href="#petal" transform="rotate(315)"/>
+    <!-- Inner ring, offset half a step for the layered spiral depth -->
+    <g fill="url(#swirlGradInner)" stroke="#d8f5ea" stroke-width="1.6" stroke-opacity="0.5" stroke-linejoin="round"
+       transform="rotate(25.7) scale(0.6)">
+      <use href="#blade" transform="rotate(0)"/>
+      <use href="#blade" transform="rotate(51.43)"/>
+      <use href="#blade" transform="rotate(102.86)"/>
+      <use href="#blade" transform="rotate(154.29)"/>
+      <use href="#blade" transform="rotate(205.71)"/>
+      <use href="#blade" transform="rotate(257.14)"/>
+      <use href="#blade" transform="rotate(308.57)"/>
     </g>
-    <circle r="11" fill="#0f2747"/>
-    <circle r="11" fill="none" stroke="#5eead4" stroke-width="1.5" opacity="0.65"/>
+    <circle r="8" fill="#10355f"/>
   </g>
 </svg>
